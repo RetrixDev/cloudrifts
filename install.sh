@@ -12,6 +12,7 @@ if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
 Cloudrifts bootstrap installer
 
 Usage:
+  curl -fsSL https://gist.githubusercontent.com/RetrixDev/86efd4eab68602c54a3e3759ba24fec7/raw/cloudrifts-install.sh | sudo bash
   curl -fsSL https://raw.githubusercontent.com/RetrixDev/cloudrifts/main/install.sh | sudo bash
   sudo ./install.sh [bundle installer options]
 
