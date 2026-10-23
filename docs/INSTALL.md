@@ -16,7 +16,7 @@ Repository mirror:
 curl -fsSL https://raw.githubusercontent.com/RetrixDev/cloudrifts/main/install.sh | sudo bash
 ```
 
-The bootstrap script downloads the pinned release tarball, verifies SHA256, extracts the bundle, and runs the real installer.
+The bootstrap script downloads the pinned version-tagged bundle, verifies SHA256, extracts the bundle, and runs the real installer.
 
 ## Requirements
 
@@ -79,12 +79,12 @@ For managed DNS, create glue records at your registrar:
 
 Then delegate the domain to those nameservers.
 
-## Manual Release Install
+## Manual Bundle Install
 
-If you prefer to download the release bundle yourself:
+If you prefer to download the bundle yourself:
 
 ```bash
-curl -fLO https://github.com/RetrixDev/cloudrifts/releases/download/v0.1.0-dev/cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz
+curl -fLO https://raw.githubusercontent.com/RetrixDev/cloudrifts/v0.1.0-dev/downloads/cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz
 echo "41d2b1c7a6d345ba23254a81c00c9d856ca44bb089bf458f9ff31341ca74cd4a  cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz" | sha256sum -c -
 tar -xzf cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz
 cd cloudrifts-panel-0.1.0-dev-linux-amd64
@@ -102,7 +102,7 @@ cat /var/lib/cloudrifts/last-setup-url.txt
 
 ## Uninstall
 
-From the extracted release bundle:
+From the extracted bundle:
 
 ```bash
 sudo ./uninstall.sh

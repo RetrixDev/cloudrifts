@@ -4,7 +4,7 @@ set -euo pipefail
 VERSION="0.1.0-dev"
 TAG="v${VERSION}"
 ASSET="cloudrifts-panel-${VERSION}-linux-amd64.tar.gz"
-RELEASE_URL="${CLOUDRIFTS_RELEASE_URL:-https://github.com/RetrixDev/cloudrifts/releases/download/${TAG}/${ASSET}}"
+RELEASE_URL="${CLOUDRIFTS_RELEASE_URL:-https://raw.githubusercontent.com/RetrixDev/cloudrifts/${TAG}/downloads/${ASSET}}"
 EXPECTED_SHA256="${CLOUDRIFTS_SHA256:-41d2b1c7a6d345ba23254a81c00c9d856ca44bb089bf458f9ff31341ca74cd4a}"
 
 if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
@@ -16,7 +16,7 @@ Usage:
   sudo ./install.sh [bundle installer options]
 
 Environment overrides:
-  CLOUDRIFTS_RELEASE_URL   Download a custom release tarball.
+  CLOUDRIFTS_RELEASE_URL   Download a custom bundle tarball.
   CLOUDRIFTS_SHA256        Expected SHA256 for the tarball.
 
 The installer supports Ubuntu 24.04 x86_64 VPS servers.

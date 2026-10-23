@@ -20,7 +20,7 @@ Repository mirror:
 curl -fsSL https://raw.githubusercontent.com/RetrixDev/cloudrifts/main/install.sh | sudo bash
 ```
 
-The bootstrap installer downloads the pinned GitHub release bundle, verifies its SHA256 checksum, extracts it, and runs the real Cloudrifts bundle installer.
+The bootstrap installer downloads the pinned version-tagged GitHub bundle, verifies its SHA256 checksum, extracts it, and runs the real Cloudrifts bundle installer.
 
 ## What Cloudrifts Manages
 
