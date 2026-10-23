@@ -7,7 +7,7 @@ Cloudrifts Phase 1 targets a fresh Ubuntu 24.04 x86_64 VPS with systemd. Start o
 Gist installer:
 
 ```bash
-curl -fsSL __GIST_RAW_INSTALL_URL__ | sudo bash
+curl -fsSL https://gist.githubusercontent.com/RetrixDev/86efd4eab68602c54a3e3759ba24fec7/raw/cloudrifts-install.sh | sudo bash
 ```
 
 Repository mirror:
@@ -85,7 +85,7 @@ If you prefer to download the release bundle yourself:
 
 ```bash
 curl -fLO https://github.com/RetrixDev/cloudrifts/releases/download/v0.1.0-dev/cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz
-echo "ed22857fc20ec0377269238e95b2fe12abf4ee7d3ea63c409cd8097fecf0d64d  cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz" | sha256sum -c -
+echo "41d2b1c7a6d345ba23254a81c00c9d856ca44bb089bf458f9ff31341ca74cd4a  cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz" | sha256sum -c -
 tar -xzf cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz
 cd cloudrifts-panel-0.1.0-dev-linux-amd64
 sudo ./install.sh

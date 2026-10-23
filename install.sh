@@ -5,7 +5,7 @@ VERSION="0.1.0-dev"
 TAG="v${VERSION}"
 ASSET="cloudrifts-panel-${VERSION}-linux-amd64.tar.gz"
 RELEASE_URL="${CLOUDRIFTS_RELEASE_URL:-https://github.com/RetrixDev/cloudrifts/releases/download/${TAG}/${ASSET}}"
-EXPECTED_SHA256="${CLOUDRIFTS_SHA256:-ed22857fc20ec0377269238e95b2fe12abf4ee7d3ea63c409cd8097fecf0d64d}"
+EXPECTED_SHA256="${CLOUDRIFTS_SHA256:-41d2b1c7a6d345ba23254a81c00c9d856ca44bb089bf458f9ff31341ca74cd4a}"
 
 if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
   cat <<HELP

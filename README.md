@@ -2,7 +2,7 @@
 
 Cloudrifts is a modern, source-available hosting control panel for a fresh Ubuntu 24.04 VPS. It is built for people who want a clean way to manage WordPress, WooCommerce, and PHP websites with real server actions instead of a heavy traditional control panel.
 
-![Cloudrifts dashboard preview](assets/cloudrifts-dashboard.jpg)
+![Cloudrifts hosting control panel preview](assets/hero-command.jpg)
 
 [Website](https://retrixdev.github.io/cloudrifts/) | [Installation guide](docs/INSTALL.md) | [Feature status](docs/FEATURES.md) | [Security notes](docs/SECURITY.md)
 
@@ -11,7 +11,7 @@ Cloudrifts is a modern, source-available hosting control panel for a fresh Ubunt
 Recommended for a fresh Ubuntu 24.04 x86_64 VPS:
 
 ```bash
-curl -fsSL __GIST_RAW_INSTALL_URL__ | sudo bash
+curl -fsSL https://gist.githubusercontent.com/RetrixDev/86efd4eab68602c54a3e3759ba24fec7/raw/cloudrifts-install.sh | sudo bash
 ```
 
 Repository mirror:
@@ -85,7 +85,7 @@ Current test release:
 - Version: `0.1.0-dev`
 - Target: Ubuntu 24.04, Linux x86_64
 - Asset: `cloudrifts-panel-0.1.0-dev-linux-amd64.tar.gz`
-- SHA256: `ed22857fc20ec0377269238e95b2fe12abf4ee7d3ea63c409cd8097fecf0d64d`
+- SHA256: `41d2b1c7a6d345ba23254a81c00c9d856ca44bb089bf458f9ff31341ca74cd4a`
 
 Build from source:
 

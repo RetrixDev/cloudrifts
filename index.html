@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cloudrifts Hosting Panel - Ubuntu VPS Control Panel for WordPress, PHP & WooCommerce</title>
-    <meta name="description" content="Cloudrifts is a modern hosting control panel for Ubuntu 24.04 VPS servers with WordPress, WooCommerce, PHP, SSL, DNS, backups, logs, and webserver switching." />
-    <meta name="keywords" content="hosting control panel, VPS control panel, WordPress control panel, PHP hosting panel, cPanel alternative, CyberPanel alternative, CloudPanel alternative, Ubuntu 24.04 hosting panel, self hosted web hosting" />
+    <title>Cloudrifts Hosting Panel - Modern Ubuntu VPS Control Panel for WordPress & PHP</title>
+    <meta name="description" content="Cloudrifts is a modern Ubuntu VPS hosting control panel for WordPress, WooCommerce, PHP, SSL, DNS, backups, logs, and server role management." />
+    <meta name="keywords" content="hosting control panel, VPS control panel, Ubuntu hosting panel, WordPress control panel, WooCommerce hosting panel, PHP hosting panel, cPanel alternative, CyberPanel alternative, CloudPanel alternative, self hosted web hosting panel, server control panel" />
     <meta name="author" content="RetrixDev" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://retrixdev.github.io/cloudrifts/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Cloudrifts Hosting Panel" />
-    <meta property="og:description" content="A clean Ubuntu VPS hosting control panel for WordPress, WooCommerce, PHP, SSL, DNS, backups, logs, and server roles." />
+    <meta property="og:description" content="A sharp browser control room for WordPress, WooCommerce, PHP, SSL, DNS, backups, logs, and Ubuntu VPS server roles." />
     <meta property="og:url" content="https://retrixdev.github.io/cloudrifts/" />
-    <meta property="og:image" content="https://retrixdev.github.io/cloudrifts/assets/cloudrifts-dashboard.jpg" />
+    <meta property="og:image" content="https://retrixdev.github.io/cloudrifts/assets/hero-command.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Cloudrifts Hosting Panel" />
-    <meta name="twitter:description" content="Modern hosting control panel for a single Ubuntu 24.04 VPS." />
-    <meta name="twitter:image" content="https://retrixdev.github.io/cloudrifts/assets/cloudrifts-dashboard.jpg" />
-    <meta name="theme-color" content="#0a0f18" />
+    <meta name="twitter:description" content="Modern Ubuntu VPS hosting control panel for WordPress, WooCommerce, PHP, SSL, DNS, backups, and logs." />
+    <meta name="twitter:image" content="https://retrixdev.github.io/cloudrifts/assets/hero-command.jpg" />
+    <meta name="theme-color" content="#05070d" />
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
@@ -26,12 +26,14 @@
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Cloudrifts Hosting Panel",
+        "alternateName": "Cloudrifts VPS Control Panel",
         "applicationCategory": "ServerApplication",
         "operatingSystem": "Ubuntu 24.04 Linux",
-        "description": "Cloudrifts is a modern hosting control panel for Ubuntu VPS servers, WordPress, WooCommerce, PHP, SSL, DNS, backups, logs, and webserver switching.",
+        "description": "Cloudrifts is a modern Ubuntu VPS hosting control panel for WordPress, WooCommerce, PHP, SSL, DNS, backups, logs, and server role management.",
         "softwareVersion": "0.1.0-dev",
         "codeRepository": "https://github.com/RetrixDev/cloudrifts",
         "downloadUrl": "https://github.com/RetrixDev/cloudrifts/releases/tag/v0.1.0-dev",
+        "keywords": "hosting control panel, VPS control panel, Ubuntu hosting panel, WordPress control panel, PHP hosting panel, cPanel alternative, CyberPanel alternative, CloudPanel alternative",
         "author": {
           "@type": "Organization",
           "name": "RetrixDev"
@@ -40,163 +42,195 @@
     </script>
   </head>
   <body>
-    <header class="site-header" aria-label="Primary">
+    <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="Cloudrifts home">
         <img src="assets/logo.svg" alt="" />
         <span>Cloudrifts</span>
       </a>
       <nav>
+        <a href="#control-room">Control room</a>
         <a href="#features">Features</a>
         <a href="#install">Install</a>
-        <a href="#status">Status</a>
         <a class="nav-button" href="https://github.com/RetrixDev/cloudrifts">GitHub</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="assets/cloudrifts-dashboard.jpg" alt="" />
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Public preview for Ubuntu 24.04 VPS servers</p>
-          <h1 id="hero-title">Cloudrifts</h1>
-          <p class="hero-copy">A modern hosting control panel for WordPress, WooCommerce, and PHP websites. Install it on one fresh VPS, open the setup URL, and manage sites, SSL, DNS, backups, logs, files, and server roles from a clean browser panel.</p>
-          <div class="install-command" aria-label="Cloudrifts install command">
-            <span>Install</span>
-            <code>curl -fsSL __GIST_RAW_INSTALL_URL__ | sudo bash</code>
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-grid">
+          <div class="hero-copy-block">
+            <p class="signal"><span></span> Phase 1 public preview · Ubuntu 24.04 VPS</p>
+            <h1 id="hero-title">A hosting control room for your VPS.</h1>
+            <p class="hero-copy">Cloudrifts turns a fresh Ubuntu server into a browser-based hosting panel for WordPress, WooCommerce, PHP, SSL, DNS, backups, logs, files, and server roles.</p>
+
+            <div class="command-card" aria-label="Cloudrifts one line install command">
+              <div class="command-topline">
+                <span>one-line install</span>
+                <button type="button" data-copy-command>Copy</button>
+              </div>
+              <code>curl -fsSL https://gist.githubusercontent.com/RetrixDev/86efd4eab68602c54a3e3759ba24fec7/raw/cloudrifts-install.sh | sudo bash</code>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#install">Install Cloudrifts</a>
+              <a class="button secondary" href="https://github.com/RetrixDev/cloudrifts">Star on GitHub</a>
+            </div>
+
+            <div class="hero-stats" aria-label="Cloudrifts release facts">
+              <div><strong>0.1.0-dev</strong><span>release</span></div>
+              <div><strong>Go + React</strong><span>daemon and PWA</span></div>
+              <div><strong>Single VPS</strong><span>focused scope</span></div>
+            </div>
           </div>
-          <div class="hero-actions">
-            <a class="button primary" href="#install">Get Started</a>
-            <a class="button secondary" href="https://github.com/RetrixDev/cloudrifts">View Source</a>
+
+          <div class="product-stage" id="control-room" aria-label="Cloudrifts dashboard preview">
+            <div class="orbit-ring one" aria-hidden="true"></div>
+            <div class="orbit-ring two" aria-hidden="true"></div>
+            <div class="screen-frame">
+              <div class="screen-top"><i></i><i></i><i></i><span>cloudrifts control room</span></div>
+              <img src="assets/cloudrifts-dashboard.jpg" alt="Cloudrifts hosting control panel dashboard preview" />
+            </div>
+            <div class="float-card card-sites">
+              <span>Sites</span>
+              <strong>WordPress · Woo · PHP</strong>
+              <p>Users, vhosts, PHP-FPM pools, databases, SSL, and diagnostics.</p>
+            </div>
+            <div class="float-card card-ssl">
+              <span>SSL job</span>
+              <strong>DNS checked</strong>
+              <p>Retry from exact failure hints.</p>
+            </div>
+            <div class="float-card card-backup">
+              <span>Backups</span>
+              <strong>Recover fast</strong>
+              <p>Local backup and restore trails.</p>
+            </div>
           </div>
         </div>
-        <div class="hero-window" aria-label="Cloudrifts panel preview">
-          <div class="window-bar">
-            <i></i><i></i><i></i>
-            <span>Cloudrifts Control Room</span>
-          </div>
-          <img src="assets/cloudrifts-dashboard.jpg" alt="Cloudrifts dashboard showing websites, SSL, server health, DNS, and backup status" />
-        </div>
-        <div class="hero-status" aria-label="Cloudrifts release highlights">
-          <div>
-            <span>Panel</span>
-            <strong>React PWA</strong>
-          </div>
-          <div>
-            <span>Daemon</span>
-            <strong>Go API</strong>
-          </div>
-          <div>
-            <span>Server</span>
-            <strong>Ubuntu 24.04</strong>
-          </div>
-          <div>
-            <span>Release</span>
-            <strong>0.1.0-dev</strong>
-          </div>
+
+        <div class="launch-rail" aria-label="Cloudrifts setup flow">
+          <span>install</span>
+          <i></i>
+          <span>setup</span>
+          <i></i>
+          <span>dns</span>
+          <i></i>
+          <span>ssl</span>
+          <i></i>
+          <span>backup</span>
         </div>
       </section>
 
-      <section class="seo-line" aria-label="Search positioning">
-        <p>Built for people searching for a hosting control panel, VPS control panel, WordPress hosting panel, PHP hosting panel, cPanel alternative, CyberPanel alternative, or CloudPanel-style single-server panel.</p>
+      <section class="keyword-band" aria-label="Search positioning">
+        <p>Built for people searching for a modern hosting control panel, Ubuntu VPS control panel, WordPress control panel, PHP hosting panel, cPanel alternative, CyberPanel alternative, CloudPanel alternative, and self-hosted server control panel.</p>
       </section>
 
-      <section id="features" class="feature-table">
-        <div class="section-head">
-          <p class="eyebrow">What it controls</p>
-          <h2>Real server workflows, visible from the panel.</h2>
+      <section id="features" class="feature-lab">
+        <div class="section-intro">
+          <p class="eyebrow">Control without the black box</p>
+          <h2>Every server action has a trail.</h2>
+          <p>Cloudrifts keeps the panel close to the server. Install roles, create sites, retry SSL, inspect logs, edit files, and recover backups while seeing what changed and what needs attention.</p>
         </div>
-        <div class="rows">
+        <div class="feature-board">
           <article>
             <span>01</span>
-            <h3>Provision websites</h3>
-            <p>Create WordPress, WooCommerce, or PHP sites with Linux users, document roots, PHP-FPM pools, MariaDB credentials, webserver vhosts, and app install jobs.</p>
+            <h3>Website provisioning</h3>
+            <p>WordPress, WooCommerce, and PHP sites with Linux users, document roots, PHP-FPM pools, MariaDB, vhosts, and setup diagnostics.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Repair SSL faster</h3>
-            <p>Run DNS preflight, see exact required records, attempt Let's Encrypt, and retry SSL from diagnostics after records resolve.</p>
+            <h3>SSL and DNS visibility</h3>
+            <p>DNS preflight, Let’s Encrypt attempts, required record hints, retry jobs, optional PowerDNS, and registrar delegation guidance.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Operate the server</h3>
-            <p>Track Nginx, Apache, PHP-FPM, MariaDB, optional PowerDNS, and optional Postfix/Dovecot role setup from one workspace.</p>
+            <h3>Server roles</h3>
+            <p>Nginx, Apache, PHP-FPM, MariaDB, optional DNS, optional mail role setup/status, and webserver switching workflows.</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Recover with context</h3>
-            <p>Browse files, edit content, read logs, create local backups, restore safely, and inspect the job trail behind each operation.</p>
+            <h3>Recovery tools</h3>
+            <p>File browser, file edits, access/error/PHP logs, local backups, restore jobs, activity, and role health checks.</p>
           </article>
         </div>
       </section>
 
-      <section class="showcase">
+      <section class="operator-map" aria-labelledby="operator-title">
         <div>
-          <p class="eyebrow">Why Cloudrifts</p>
-          <h2>Not just buttons. Jobs with proof.</h2>
-          <p>Every major action is represented as a backend job with steps, issues, logs, and recovery hints. That makes the panel practical for real VPS administration, where DNS, services, certificates, files, and package state often need precise feedback.</p>
+          <p class="eyebrow">Operator flow</p>
+          <h2 id="operator-title">From raw Ubuntu to managed websites.</h2>
         </div>
-        <dl>
-          <div>
-            <dt>Apps</dt>
-            <dd>WordPress, WooCommerce, PHP</dd>
-          </div>
-          <div>
-            <dt>Webservers</dt>
-            <dd>Nginx, Apache, OpenLiteSpeed, LiteSpeed paths</dd>
-          </div>
-          <div>
-            <dt>Ops</dt>
-            <dd>SSL, DNS, files, logs, backups, restore</dd>
-          </div>
-        </dl>
+        <div class="map-grid">
+          <article>
+            <b>1</b>
+            <h3>Start clean</h3>
+            <p>Use a fresh Ubuntu 24.04 x86_64 VPS with root or sudo access.</p>
+          </article>
+          <article>
+            <b>2</b>
+            <h3>Run installer</h3>
+            <p>The bootstrap downloads a pinned GitHub release bundle and verifies SHA256 before install.</p>
+          </article>
+          <article>
+            <b>3</b>
+            <h3>Open setup URL</h3>
+            <p>The installer prints a one-time browser setup link for your panel hostname and DNS choice.</p>
+          </article>
+          <article>
+            <b>4</b>
+            <h3>Launch sites</h3>
+            <p>Create WordPress, WooCommerce, or PHP sites and manage SSL, logs, files, backups, and roles.</p>
+          </article>
+        </div>
       </section>
 
       <section id="install" class="install-section">
-        <div>
-          <p class="eyebrow">Install</p>
-          <h2>One command on a fresh VPS.</h2>
-          <p>The bootstrap installer downloads the pinned GitHub release bundle, verifies SHA256, extracts it, and runs the real Cloudrifts installer. The installer prints a private one-time setup URL for your browser.</p>
-          <a class="text-link" href="install.html">Open the full install guide</a>
+        <div class="install-copy">
+          <p class="eyebrow">Install from Gist</p>
+          <h2>One command. Real release bundle. Verified checksum.</h2>
+          <p>The public Gist script is a small bootstrap. It fetches the GitHub release tarball, checks the pinned SHA256, extracts Cloudrifts, then runs the full Ubuntu installer.</p>
+          <a class="text-link" href="install.html">Open the simple install guide →</a>
         </div>
-        <div class="terminal" aria-label="Install output example">
+        <div class="terminal" aria-label="Install command and example output">
           <div class="terminal-bar">
             <i></i><i></i><i></i>
-            <span>cloudrifts install</span>
+            <span>cloudrifts@ubuntu:~</span>
           </div>
-          <pre><code>curl -fsSL __GIST_RAW_INSTALL_URL__ | sudo bash</code></pre>
-          <pre><code>checking Ubuntu 24.04
-installing server roles
-starting Cloudrifts services
-setup: http://YOUR_SERVER_IP:8080/setup/sso/...</code></pre>
+          <pre><code>curl -fsSL https://gist.githubusercontent.com/RetrixDev/86efd4eab68602c54a3e3759ba24fec7/raw/cloudrifts-install.sh | sudo bash</code></pre>
+          <pre><code>Cloudrifts 0.1.0-dev bootstrap
+Verifying SHA256
+Starting Cloudrifts bundle installer
+Setup: http://YOUR_SERVER_IP:8080/setup/sso/...</code></pre>
+          <p class="checksum">SHA256 · 41d2b1c7a6d345ba23254a81c00c9d856ca44bb089bf458f9ff31341ca74cd4a</p>
         </div>
       </section>
 
-      <section id="status" class="status-section">
-        <div class="section-head">
-          <p class="eyebrow">Status</p>
-          <h2>Early public release, clear boundaries.</h2>
+      <section class="scope-section">
+        <div class="section-intro compact">
+          <p class="eyebrow">Public preview</p>
+          <h2>Honest scope, strong base.</h2>
         </div>
-        <div class="status-columns">
+        <div class="scope-grid">
           <article>
-            <h3>Ready to test</h3>
-            <p>Installer, setup URL, website creation, SSL retry, diagnostics, files, logs, backups, restore, DNS role, mail role setup/status, and job trails.</p>
+            <span>Ready to test</span>
+            <p>Installer, setup URL, website creation, SSL retry, diagnostics, file manager, logs, backups, restore jobs, DNS role, mail role setup/status, and job trails.</p>
           </article>
           <article>
-            <h3>Phase 1 scope</h3>
-            <p>Single-server Ubuntu 24.04 only. Use a clean test VPS and validate your desired workflows before running important production sites.</p>
+            <span>Designed for</span>
+            <p>One fresh Ubuntu 24.04 VPS running WordPress, WooCommerce, PHP, Nginx/Apache, MariaDB, SSL, DNS, and hosting operations from a browser panel.</p>
           </article>
           <article>
-            <h3>Not finished yet</h3>
-            <p>Full mailbox management, DKIM/DMARC automation, remote backup providers, multi-server clusters, and full production team permissions.</p>
+            <span>Coming later</span>
+            <p>Full mailbox management, DKIM/DMARC automation, remote backup providers, multi-server clusters, and complete production team permissions.</p>
           </article>
         </div>
       </section>
 
-      <section class="cta">
-        <p class="eyebrow">Promote-ready foundation</p>
-        <h2>Cloudrifts gives VPS owners a cleaner path from server to website.</h2>
-        <div class="hero-actions">
+      <section class="final-cta">
+        <p class="eyebrow">Promote-ready control panel</p>
+        <h2>Make your VPS feel like a premium hosting workspace.</h2>
+        <div class="hero-actions centered">
           <a class="button primary" href="https://github.com/RetrixDev/cloudrifts">Open GitHub Repository</a>
           <a class="button secondary" href="features.html">View Feature Status</a>
         </div>
@@ -206,8 +240,25 @@ setup: http://YOUR_SERVER_IP:8080/setup/sso/...</code></pre>
     <footer>
       <span>Cloudrifts Hosting Panel</span>
       <a href="install.html">Install</a>
+      <a href="features.html">Features</a>
       <a href="security.html">Security</a>
       <a href="https://github.com/RetrixDev/cloudrifts">GitHub</a>
     </footer>
+
+    <script>
+      const command = 'curl -fsSL https://gist.githubusercontent.com/RetrixDev/86efd4eab68602c54a3e3759ba24fec7/raw/cloudrifts-install.sh | sudo bash';
+      document.querySelectorAll('[data-copy-command]').forEach((button) => {
+        button.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(command);
+            button.textContent = 'Copied';
+            setTimeout(() => { button.textContent = 'Copy'; }, 1500);
+          } catch (error) {
+            button.textContent = 'Copy failed';
+            setTimeout(() => { button.textContent = 'Copy'; }, 1500);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
