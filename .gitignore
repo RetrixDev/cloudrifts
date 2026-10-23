@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+dist/
+build/
+.local/
+*.log
+*.tmp
+apps/web/tsconfig.tsbuildinfo
+coverage/

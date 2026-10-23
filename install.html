@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Install Cloudrifts - Ubuntu 24.04 Hosting Control Panel</title>
+    <meta name="description" content="Install Cloudrifts hosting control panel on a fresh Ubuntu 24.04 VPS using the pinned GitHub release bootstrap installer." />
+    <link rel="canonical" href="https://retrixdev.github.io/cloudrifts/install.html" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="./" aria-label="Cloudrifts home">
+        <img src="assets/logo.svg" alt="" />
+        <span>Cloudrifts</span>
+      </a>
+      <nav>
+        <a href="./#features">Features</a>
+        <a href="features.html">Status</a>
+        <a href="https://github.com/RetrixDev/cloudrifts">GitHub</a>
+      </nav>
+    </header>
+    <main>
+      <section class="doc-hero">
+        <p class="eyebrow">Install guide</p>
+        <h1>Install Cloudrifts on Ubuntu 24.04.</h1>
+        <p>Use a fresh x86_64 VPS with root or sudo access. The bootstrap script verifies the pinned release checksum before running the bundle installer.</p>
+      </section>
+      <section class="doc-section">
+        <h2>One-line install</h2>
+        <pre><code>curl -fsSL __GIST_RAW_INSTALL_URL__ | sudo bash</code></pre>
+        <h2>Repository mirror</h2>
+        <pre><code>curl -fsSL https://raw.githubusercontent.com/RetrixDev/cloudrifts/main/install.sh | sudo bash</code></pre>
+        <h2>After install</h2>
+        <p>Open the one-time setup URL printed by the installer, enter your own panel domain such as <code>panel.example.com</code>, choose external DNS or managed DNS, then create your first WordPress, WooCommerce, or PHP website.</p>
+        <h2>Useful commands</h2>
+        <pre><code>systemctl status cloudriftsd
+journalctl -u cloudriftsd -n 120 --no-pager
+cloudriftsctl status --addr http://127.0.0.1:8080
+cat /var/lib/cloudrifts/last-setup-url.txt</code></pre>
+        <p><a class="text-link" href="https://github.com/RetrixDev/cloudrifts/blob/main/docs/INSTALL.md">Read the full Markdown guide on GitHub</a></p>
+      </section>
+    </main>
+    <footer>
+      <span>Cloudrifts Hosting Panel</span>
+      <a href="./">Home</a>
+      <a href="security.html">Security</a>
+    </footer>
+  </body>
+</html>
+

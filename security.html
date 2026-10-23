@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cloudrifts Security Notes</title>
+    <meta name="description" content="Security notes for testing Cloudrifts hosting control panel on Ubuntu 24.04 VPS servers." />
+    <link rel="canonical" href="https://retrixdev.github.io/cloudrifts/security.html" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="./" aria-label="Cloudrifts home">
+        <img src="assets/logo.svg" alt="" />
+        <span>Cloudrifts</span>
+      </a>
+      <nav>
+        <a href="install.html">Install</a>
+        <a href="features.html">Features</a>
+        <a href="https://github.com/RetrixDev/cloudrifts">GitHub</a>
+      </nav>
+    </header>
+    <main>
+      <section class="doc-hero">
+        <p class="eyebrow">Security</p>
+        <h1>Test Cloudrifts with care.</h1>
+        <p>Cloudrifts controls real server services and files. The current release is an early public test build for fresh Ubuntu 24.04 servers.</p>
+      </section>
+      <section class="doc-section">
+        <h2>Recommended use</h2>
+        <p>Use a fresh VPS, keep the one-time setup URL private, review open ports, prefer trusted IP access during evaluation, and put the panel behind HTTPS for real use.</p>
+        <h2>Current model</h2>
+        <p>The browser panel talks to <code>cloudriftsd</code>. Privileged operations go through <code>cloudrifts-agent</code> with a narrow sudoers policy created by the installer.</p>
+        <p><a class="text-link" href="https://github.com/RetrixDev/cloudrifts/blob/main/docs/SECURITY.md">Read the full security notes on GitHub</a></p>
+      </section>
+    </main>
+    <footer>
+      <span>Cloudrifts Hosting Panel</span>
+      <a href="./">Home</a>
+      <a href="install.html">Install</a>
+    </footer>
+  </body>
+</html>

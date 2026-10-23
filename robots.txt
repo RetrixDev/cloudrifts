@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://retrixdev.github.io/cloudrifts/sitemap.xml
+

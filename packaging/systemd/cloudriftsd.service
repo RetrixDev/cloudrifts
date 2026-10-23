@@ -1,0 +1,24 @@
+[Unit]
+Description=Cloudrifts Panel Backend
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cloudrifts
+Group=cloudrifts
+Environment=CLOUDRIFTS_HTTP_ADDR=:8080
+Environment=CLOUDRIFTS_DATA_DIR=/var/lib/cloudrifts
+Environment=CLOUDRIFTS_ETC_DIR=/etc/cloudrifts
+Environment=CLOUDRIFTS_LOG_DIR=/var/log/cloudrifts
+Environment=CLOUDRIFTS_WEB_DIR=/usr/local/share/cloudrifts/web
+Environment=CLOUDRIFTS_EXECUTION_MODE=real
+Environment=CLOUDRIFTS_AGENT_PATH=/usr/local/bin/cloudrifts-agent
+Environment=CLOUDRIFTS_SUDO_PATH=/usr/bin/sudo
+ExecStart=/usr/local/bin/cloudriftsd
+Restart=always
+RestartSec=3
+NoNewPrivileges=false
+
+[Install]
+WantedBy=multi-user.target
